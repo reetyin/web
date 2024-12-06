@@ -1,0 +1,108 @@
+<!-- Project 4 -->
+<!-- Name: Rui Yin -->
+<!-- Date: Dec 4,2024 -->
+<!-- Description: This HTML structure represents a company website with a slideshow, navigation, and sections for recent updates. It features images, company information, and a footer, providing users with a dynamic and informative experience.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Our Company</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="page-wrapper">
+    <header id="header">
+        <div id="slideshow-container">
+            <div id="slide-1" class="slide">
+                <a href="index.html">
+                    <img src="images/slide1.jpg" alt="Home">
+                </a>
+            </div>
+            <div id="slide-2" class="slide">
+                <a href="products.html">
+                    <img src="images/slide2.jpg" alt="Products">
+                </a>
+            </div>
+            <div id="slide-3" class="slide">
+                <a href="founder.html">
+                    <img src="images/slide3.jpg" alt="Founder">
+                </a>
+            </div>
+            <div id="slide-4" class="slide">
+                <a href="contact.html">
+                    <img src="images/slide4.jpg" alt="Contact">
+                </a>
+            </div>    
+            <!--add navigation buttons-->
+            <a id="prev-btn" onclick="changeSlide(-1)">&#10094;</a>
+            <a id="next-btn" onclick="changeSlide(1)">&#10095;</a>
+
+            <!-- add dots -->
+            <div id="dot-nav">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </header>
+    <!--add navigation links-->
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <span class="divider">|</span>
+        <a href="products.html">Products</a>
+        <span class="divider">|</span>
+        <a href="founder.html">Founder</a>
+        <span class="divider">|</span>
+        <a href="contact.html">Contact</a>
+    </nav>
+ <main>
+    <!--add main content-->
+    <div id="container">
+        <div id="products-grid">
+            <!-- Product 1: Study Abroad Consultation -->
+            <div id="product-card-1">
+                <img src="images/product1.jpg" alt="Study Abroad Consultation">
+                <div id="product-info-1">
+                    <h1>Study Abroad Consultation</h1>
+                    <p>Our expert consultants provide personalized guidance on selecting the best study abroad programs in Canada, ensuring your academic and personal goals are met. <a href="https://example.com/consultation" target="_blank">Learn more about our consultation services.</a></p>
+                </div>
+            </div>
+            <!-- Product 2: Language Training Courses -->
+            <div id="product-card-2">
+                <img src="images/product2.jpg" alt="Language Training Courses">
+                <div id="product-info-2">
+                    <h1>Language Training Courses</h1>
+                    <p>Our language courses are designed to help international students improve their English or French skills, providing them with the foundation needed for academic success in Canada. <a href="https://example.com/language-courses" target="_blank">Find out more about our language training options.</a></p>
+                </div>
+            </div>
+            <!-- Product 3: Visa Application Assistance -->
+            <div id="product-card-3">
+                <img src="images/product3.jpg" alt="Visa Application Assistance">
+                <div id="product-info-3">
+                    <h1>Visa Application Assistance</h1>
+                    <p>Our team offers expert assistance in navigating the visa application process, ensuring a smooth and successful application for students planning to study in Canada. <a href="https://example.com/visa-assistance" target="_blank">Get more information on visa services.</a></p>
+                </div>
+            </div>
+            <!-- Product 4: International Student Accommodation -->
+            <div id="product-card-4">
+                <img src="images/product4.jpg" alt="Student Accommodation">
+                <div id="product-info-4">
+                    <h1>International Student Accommodation</h1>
+                    <p>We help international students find comfortable and affordable housing options near their educational institutions in Canada, making their transition smoother. <a href="https://example.com/accommodation" target="_blank">Explore accommodation options available.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <!--add footer-->
+    <footer id="footer">
+        <p>Copyright © 2024 Yi Run Co., LT. All rights reserved.</p>
+    </footer>
+</div>
+<script src="scripts/slideshow.js"></script>
+</body>
+</html>

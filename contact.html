@@ -1,0 +1,136 @@
+<!-- Project 4 -->
+<!-- Name: Rui Yin -->
+<!-- Date: Dec 4,2024 -->
+<!-- Description: This HTML structure represents a company website with a slideshow, navigation, and sections for recent updates. It features images, company information, and a footer, providing users with a dynamic and informative experience.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Our Company</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <div id="slideshow-container">
+                <div id="slide-1" class="slide">
+                    <a href="index.html">
+                        <img src="images/slide1.jpg" alt="Home">
+                    </a>
+                </div>
+                <div id="slide-2" class="slide">
+                    <a href="products.html">
+                        <img src="images/slide2.jpg" alt="Products">
+                    </a>
+                </div>
+                <div id="slide-3" class="slide">
+                    <a href="founder.html">
+                        <img src="images/slide3.jpg" alt="Founder">
+                    </a>
+                </div>
+                <div id="slide-4" class="slide">
+                    <a href="contact.html">
+                        <img src="images/slide4.jpg" alt="Contact">
+                    </a>
+                </div>    
+                
+                <a id="prev-btn" onclick="changeSlide(-1)">&#10094;</a>
+                <a id="next-btn" onclick="changeSlide(1)">&#10095;</a>
+
+              
+                <div id="dot-nav">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </header>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <span class="divider">|</span>
+            <a href="products.html">Products</a>
+            <span class="divider">|</span>
+            <a href="founder.html">Founder</a>
+            <span class="divider">|</span>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <main>
+        <div id="container">
+            <section id="contact-section">
+                <h1>How Can We Help You?</h1>
+                <p>We'd love to hear from you. Please fill out this form and we will get in touch with you shortly.</p>
+                
+                <div id="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" 
+                                   placeholder="Enter your full name"
+                                   pattern="[a-zA-Z\s]{2,30}"
+                                   required>
+                            <div class="error-message" id="error-name"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" 
+                                   placeholder="Enter 10-digit number"
+                                   pattern="\d{10}"
+                                   required>
+                            <div class="error-message" id="error-phone"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" 
+                                   placeholder="example@domain.com"
+                                   required>
+                            <div class="error-message" id="error-email"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" 
+                                      placeholder="Enter your message (minimum 10 characters)"
+                                      rows="4" 
+                                      required></textarea>
+                            <div class="error-message" id="error-comments"></div>
+                        </div>
+
+                        <div class="button-group">
+                            <button type="submit">Submit</button>
+                            <button type="reset" class="reset-btn">Reset</button>
+                        </div>
+
+                        <div id="success-message">
+                            Thank you for your message! Redirecting to homepage...
+                        </div>
+                    </form>
+                </div>
+
+                <div id="contact-info">
+                    <h3>Additional Contact Information</h3>
+                    <p>You can also reach us through:</p>
+                    <ul>
+                        <li>Email: info@yirun.ca</li>
+                        <li>Phone: (431) 456-7890</li>
+                        <li>Address: 123 Business Street, Winipeg, Canada</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+        <footer id="footer">
+            <p>Copyright © 2024 Yi Run Co., LT. All rights reserved.</p>
+        </footer> 
+    </div>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/contact-form.js"></script>
+</body>
+</html>  

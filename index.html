@@ -1,0 +1,102 @@
+<!-- Project 4 -->
+<!-- Name: Rui Yin -->
+<!-- Date: Dec 4,2024 -->
+<!-- Description:This HTML structure represents a company website with a slideshow, navigation, and sections for  recent updates. It features images, company information, and a footer, providing users with a dynamic and informative experience. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Company</title>
+    <!-- add favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <div id="slideshow-container">
+                <div id="slide-1" class="slide">
+                    <a href="index.html">
+                        <img src="images/slide1.jpg" alt="Home">
+                    </a>
+                </div>
+                <div id="slide-2" class="slide">
+                    <a href="products.html">
+                        <img src="images/slide2.jpg" alt="Products">
+                    </a>
+                </div>
+                <div id="slide-3" class="slide">
+                    <a href="founder.html">
+                        <img src="images/slide3.jpg" alt="Founder">
+                    </a>
+                </div>
+                <div id="slide-4" class="slide">
+                    <a href="contact.html">
+                        <img src="images/slide4.jpg" alt="Contact">
+                    </a>
+                </div>    
+                <!-- add navigation buttons -->
+                <a id="prev-btn" onclick="changeSlide(-1)">&#10094;</a>
+                <a id="next-btn" onclick="changeSlide(1)">&#10095;</a>
+
+                <!-- add dots -->
+                <div id="dot-nav">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </header>
+        <!-- add navigation links -->
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <span class="divider">|</span>
+            <a href="products.html">Products</a>
+            <span class="divider">|</span>
+            <a href="founder.html">Founder</a>
+            <span class="divider">|</span>
+            <a href="contact.html">Contact</a>
+        </nav>
+    <main>
+        <!-- add main content -->    
+        <div id="container">
+             <!-- add company information -->
+            <section id="company-info">
+                <img src="images/company-image.jpg" alt="Company Office" width="800" height="400">
+                <h1>About Us</h1>
+                    <p>Yi Run Co., LT is a leading provider of study abroad services for international students. With years of experience, we specialize in assisting students who wish to pursue higher education in Canada. Our dedicated team provides comprehensive guidance on program selection, application processes, and scholarship opportunities, ensuring a smooth transition for students seeking to study abroad.</p>
+                    <p>We work with top universities and colleges across Canada, helping students find the best academic fit based on their goals and interests. Our mission is to make the study abroad experience as seamless as possible, providing ongoing support before, during, and after arrival in Canada.</p>
+                    <p>Whether you're looking to study in one of Canada's world-renowned universities or seeking a specialized program, we are here to guide you every step of the way.</p>
+            </section>
+            <section id="recent-updates">
+                <h1>Recent Updates</h1>
+                <div id="update-item-1" class="update-item">
+                    <h2>New Program Offerings <span class="update-date">(Date: December 5, 2024)</span></h2>
+                    <p>Explore our latest study abroad programs specifically designed for international students in Canada. These programs offer diverse options to help you succeed academically and professionally. <a href="https://example.com/programs" target="_blank">Learn more about our programs.</a></p>
+                </div>
+                <div id="update-item-2" class="update-item">
+                    <h2>Admission Deadlines <span class="update-date">(Date: December 3, 2024)</span></h2>
+                    <p>Don’t miss our upcoming application deadlines for Canadian universities and colleges. Be sure to check the deadlines for your desired program and submit your application on time. <a href="https://example.com/deadlines" target="_blank">Check the admission deadlines here.</a></p>
+                </div>
+                <div id="update-item-3" class="update-item">
+                    <h2>Scholarships Available <span class="update-date">(Date: November 28, 2024)</span></h2>
+                    <p>We are pleased to offer scholarships for qualified students wishing to study in Canada. These scholarships are designed to help ease the financial burden of international students. <a href="https://example.com/scholarships" target="_blank">Learn more about available scholarships and how to apply.</a></p>
+                </div>
+            </section>
+            
+             
+        </div>
+    </main>
+        <!-- add footer -->
+        <footer id="footer">
+            <p>Copyright © 2024 Yi Run Co., LT. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html> 

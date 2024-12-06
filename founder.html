@@ -1,0 +1,106 @@
+<!-- Project 4 -->
+<!-- Name: Rui Yin -->
+<!-- Date: Dec 4,2024 -->
+<!-- Description: This HTML structure represents a company website with a slideshow, navigation, and sections for recent updates. It features images, company information, and a footer, providing users with a dynamic and informative experience.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Founder - Our Company</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>  
+<body>
+<div id="page-wrapper">
+    <header id="header">
+        <div id="slideshow-container">
+            <div id="slide-1" class="slide">
+                <a href="index.html">
+                    <img src="images/slide1.jpg" alt="Home">
+                </a>
+            </div>
+            <div id="slide-2" class="slide">
+                <a href="products.html">
+                    <img src="images/slide2.jpg" alt="Products">
+                </a>
+            </div>
+            <div id="slide-3" class="slide">
+                <a href="founder.html">
+                    <img src="images/slide3.jpg" alt="Founder">
+                </a>
+            </div>
+            <div id="slide-4" class="slide">
+                <a href="contact.html">
+                    <img src="images/slide4.jpg" alt="Contact">
+                </a>
+            </div>    
+            <!-- 添加导航按钮 -->
+            <a id="prev-btn" onclick="changeSlide(-1)">&#10094;</a>
+            <a id="next-btn" onclick="changeSlide(1)">&#10095;</a>
+
+            <!-- 添加点导航 -->
+            <div id="dot-nav">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </header>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <span class="divider">|</span>
+        <a href="products.html">Products</a>
+        <span class="divider">|</span>
+        <a href="founder.html">Founder</a>
+        <span class="divider">|</span>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <div id="container">
+            <div id="founder-profile">
+                <div id="founder-image">
+                    <img src="images/founder1.jpg" alt="John Doe - Founder">
+                </div>
+                <div id="founder-content">
+                    <h1>John Doe</h1>
+                    <h2>CEO & Founder</h2>
+                    <div id="founder-description">
+                        <p>John Doe is a visionary leader with over 20 years of experience in technology innovation and business transformation.</p>
+                        
+                        <p>Under his leadership, the company has achieved numerous milestones:</p>
+                        <ul>
+                            <li>Successfully launched multiple groundbreaking products</li>
+                            <li>Expanded operations to 15 countries</li>
+                            <li>Built a team of over 500 talented professionals</li>
+                            <li>Secured partnerships with industry leaders</li>
+                        </ul>
+                        
+                        <p>Prior to founding our company, John held leadership positions at several Fortune 500 companies.</p>
+                        
+                        <blockquote>
+                            "Our mission is to transform the industry through innovation while maintaining our commitment to excellence."
+                        </blockquote>
+                        
+                        <p>Education & Achievements:</p>
+                        <ul>
+                            <li>MBA from Harvard Business School</li>
+                            <li>Multiple technology patents</li>
+                            <li>Industry Leadership Award 2023</li>
+                            <li>Regular speaker at global technology conferences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <footer id="footer">
+            <p>Copyright © 2024 Yi Run Co., LT. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html> 
